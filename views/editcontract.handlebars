@@ -1,0 +1,13 @@
+<h1>Edição de Contratos</h1>
+<form action="/contracts/updatecontract" method="POST" class="form">
+    <input type="hidden" name="pppoe" value="{{contract.username}}">
+    <div class="form-control">
+        <label for="username">PPPoE:</label>
+        <input type="text" name="username" placeholder="Digite o PPPoE do cliente" value="{{contract.username}}">
+    </div>
+    <div class="form-control">
+        <label for="conexao">Tipo de conexão:</label>
+        <input type="text" name="conexao" placeholder="Digite o tipo de conexão" value="{{contract.conexao}}">
+    </div>
+    <input type="submit" value="Editar">
+</form>

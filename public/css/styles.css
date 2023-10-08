@@ -1,0 +1,66 @@
+* {
+    font-family: Helvetica;
+    margin: 0;
+}
+
+#navbar {
+    border-bottom: 1px solid #ccc;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+#navbar ul li {
+    margin-left: 1em;
+}
+/* Estilo para o título */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para a div de contêiner da tabela */
+  .contracts-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+  }
+  
+  /* Estilo para a tabela */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+  }
+  
+  /* Estilo para as células do cabeçalho da tabela */
+  th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Estilo para as células das linhas da tabela */
+  td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Estilo para linhas ímpares */
+  tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilo para linhas pares */
+  tr:nth-child(even) {
+    background-color: #fff;
+  }
+  

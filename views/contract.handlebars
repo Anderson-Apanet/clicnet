@@ -1,0 +1,13 @@
+<div id="contract-page">
+    <a href="/contracts">Voltar</a>
+    <div class="container">
+        <h1>{{contract.username}}</h1>
+        <p>Este contrato usa a tecnologia {{contract.conexao}}.</p>
+        <div class="actions">
+            <a href="/contracts/edit/{{contract.username}}">Editar</a>
+            <form action="/contracts/remove/{{contract.username}}" method="post">
+                <input type="submit" value="Remover">
+            </form>
+        </div>
+    </div>
+</div>

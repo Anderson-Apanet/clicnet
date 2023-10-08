@@ -1,0 +1,19 @@
+<script>
+  window.addEventListener("message", function (event) {
+  const eventData = JSON.parse(event.data);
+  console.log(eventData)
+});
+</script>
+
+<h1>Últimas Conexões do Cliente </h1>
+<div class="contracts-container">
+    <div>
+         <table>
+            <tr><th>PPPoE</th><th>Inicio</th><th>fim</th><th>IP</th><th>Download</th><th>Upload</th></tr>
+        {{#each contracts}}
+            <tr><td>{{this.username}}</td><td>{{formatDate this.acctstarttime}}</td><td>{{formatDate this.acctstoptime}}</td>
+            <td>{{this.framedipaddress}}</td><td>{{this.acctinputoctets}}</td><td>{{this.acctoutputoctets}}</td></tr>
+        {{/each}}
+        </table>
+    </div>
+</div>
